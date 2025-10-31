@@ -1,0 +1,2233 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Digitali - Votre agence de marketing digital en Tunisie. Création de contenu, vidéos, sites web et stratégie digitale.">
+    <meta name="author" content="Digitali">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Digitali - Agence de Marketing Digital</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-onix-digital.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+    <style>
+  /* Override des couleurs du thème - Version bleue uniquement */
+  :root {
+    --primary-blue: #1a4b8c;
+    --dark-blue: #0d2d5d;
+    --light-blue: #3474c9;
+  }
+  
+  /* Styles globaux pour harmoniser tout le site */
+  body {
+    font-family: 'Poppins', sans-serif;
+    color: #2a2a2a;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Header et navigation */
+  .header-area .main-nav .nav li:hover a,
+  .header-area .main-nav .nav li a.active,
+  .background-header .main-nav .nav li:hover a,
+  .background-header .main-nav .nav li a.active {
+    color: var(--dark-blue)!important;
+  }
+  
+  /* Boutons */
+  .main-blue-button a, .main-blue-button-hover a {
+    background-color: var(--primary-blue);
+  }
+  .main-blue-button-hover a:hover {
+    background-color: var(--dark-blue);
+  }
+  .main-red-button a, .main-red-button-hover a {
+    background-color: var(--dark-blue);
+  }
+  .main-red-button-hover a:hover {
+    background-color: var(--primary-blue);
+  }
+  
+  /* Section headings */
+  .section-heading h2 em {
+    color: var(--primary-blue);
+  }
+  .section-heading h2 span {
+    color: var(--dark-blue);
+  }
+  
+  .section-heading span {
+    color: var(--dark-blue);
+    opacity: 0.3;
+  }
+  
+  /* Main banner */
+  .main-banner .item h6 {
+    color: var(--dark-blue);
+  }
+  .main-banner .item .down-buttons .call-button i {
+    background: linear-gradient(105deg, var(--dark-blue) 0%, var(--primary-blue) 100%);
+  }
+  .main-banner .item .down-buttons .call-button a {
+    color: var(--dark-blue);
+  }
+  
+  /* Services section */
+  .our-services .item h4 {
+    color: var(--primary-blue);
+  }
+  .our-services .owl-dots .owl-dot {
+    background-color: var(--dark-blue);
+  }
+  
+  /* About section */
+  .about-us .fact-item .count-digit {
+    color: var(--primary-blue);
+  }
+  .about-us .fact-item .count-title {
+    color: var(--dark-blue);
+  }
+  
+  /* Contact section */
+  form#contact button {
+    background-color: var(--dark-blue);
+  }
+  form#contact button:hover {
+    background-color: var(--primary-blue);
+  }
+  
+  /* Footer */
+  footer .about ul li a {
+    background-color: var(--primary-blue);
+  }
+  footer .about ul li a:hover {
+    background-color: var(--dark-blue);
+  }
+  footer .footer-item form {
+    background-color: var(--primary-blue);
+  }
+  footer .copyright p a {
+    color: var(--dark-blue);
+    text-align:center;
+  }
+  
+  /* Preloader */
+  .preloader-inner .dot, .preloader-inner .dots span {
+    background: var(--dark-blue);
+  }
+
+  
+  /* Fixer la taille du logo */
+  .header-area .main-nav .logo img {
+    height: 80px;
+    width: auto;
+  }
+  footer {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    position: relative;
+    margin-top: auto !important;
+  }
+
+  html, body {
+    margin: 0 !important;
+    padding-bottom: 0 !important;
+  }
+/* Fixer les icônes en bleu */
+.our-services .item .icon img,
+.services footer-item i,
+.about footer-item i {
+    filter: hue-rotate(200deg) saturate(2) brightness(0.8) !important;
+}
+
+/* Icônes de services en bleu */
+.service-icon-01, .service-icon-02, 
+.service-icon-03, .service-icon-04 .footer-dec{
+    filter: hue-rotate(200deg) saturate(2) brightness(0.8) !important;
+}
+
+  
+  /* Modification des images décoratives avec couleur bleue */
+  .services-right-dec img,
+.services-left-dec img,
+.contact-dec img,
+.contact-left-dec img,
+.footer-dec img {
+  filter: hue-rotate(200deg) saturate(1.2) brightness(0.8);
+}
+  
+/* Couleur bleue spécifique pour le footer */
+.footer-dec img {
+   filter: 
+    hue-rotate(200deg) 
+    saturate(2) 
+    brightness(0.9) 
+    !important;
+  -webkit-filter: 
+    hue-rotate(200deg) 
+    saturate(2) 
+    brightness(0.9) 
+    !important;
+  position: relative;
+  z-index: 0;
+  }
+
+  
+
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px var(--primary-blue), 0 0 20px var(--primary-blue);
+    }
+    to {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px var(--light-blue), 0 0 40px var(--light-blue);
+    }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  /* Styles pour la section "OUR PROJECTS" */
+  .loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin: 40px 0;
+  }
+  
+  .loader span {
+    font-size: 42px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--dark-blue);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    animation: textGlow 2s infinite alternate;
+  }
+  
+  @keyframes textGlow {
+    from {
+      text-shadow: 0 0 5px rgba(26, 75, 140, 0.3);
+    }
+    to {
+      text-shadow: 0 0 15px rgba(26, 75, 140, 0.6), 0 0 20px rgba(26, 75, 140, 0.4);
+    }
+  }
+
+
+
+ /* Styles pour la section des logos clients - THEY TRUSTED US */
+.our-services .item .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px; /* Hauteur fixe pour toutes les cartes */
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.our-services .item .logo img {
+  max-width: 150px;
+  max-height: 80px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+ 
+}
+
+
+
+/* Assurer que toutes les cartes de logos ont la même hauteur */
+.our-services .owl-services .item {
+  min-height: 200px; /* Hauteur minimale pour uniformiser */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px 20px;
+  animation: alternate Float 3s ease-in-out infinite;
+}
+
+/* Animation 1: Translation verticale ultra-rapide */
+.owl-services .item .logo img {
+  animation: fastFloat 1.5s ease-in-out infinite;
+}
+
+@keyframes fastFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+
+
+ .contact-us .section-heading {
+  text-align: center !important;
+  width: 100% !important;
+  margin-left: 0 !important;
+}
+
+  /* Styles pour le formulaire de contact */
+  .contact-us .section-heading h2 {
+    color: var(--dark-blue);
+    text-align: center !important;
+  margin-left: 0 !important;
+  width: 100% !important;
+  }
+  
+  .contact-us form input {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .contact-us form input:focus {
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 2px rgba(26, 75, 140, 0.2);
+    outline: none;
+  }
+
+.contact-us .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}  
+    
+    .contact-us .col-lg-5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+  
+  /* Style exact pour les boutons avec thème bleu */
+.submit-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: transparent;
+  text-transform: uppercase;
+  border: 1px solid #2a5cbd;
+  box-shadow:
+    0 0 5px rgba(42, 92, 189, 0.5),
+    0 0 5px 1px transparent,
+    0 0 20px -5px rgba(42, 92, 189, 0.3),
+    0 0 20px -5px rgba(42, 92, 189, 0.3),
+    0 -10px 10px -10px transparent inset;
+  padding: 8px 15px;
+  width: auto;
+  min-width: 120px;
+  height: 35px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-shadow: 1px 0 0 white;
+  font-size: 12px;
+  position: relative;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.7);
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.submit-style:after {
+  content: attr(data-text);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: transparent;
+  text-shadow: 25px 25px 15px white;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 40px;
+  transition: 0.5s;
+}
+
+.submit-style:hover:after,
+.submit-style:focus:after {
+  letter-spacing: 3px;
+  text-shadow: 1px 0 0 white;
+}
+
+.submit-style:before {
+  content: attr(data-text);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: transparent;
+  text-shadow: 25px -25px 15px white;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 40px;
+  transition: 0.8s;
+}
+
+.submit-style:hover:before,
+.submit-style:focus:before {
+  letter-spacing: 3px;
+  text-shadow: 1px 0 1px white;
+}
+
+.submit-style:hover,
+.submit-style:focus {
+  box-shadow:
+    0 0 20px rgba(42, 92, 189, 0.6),
+    0 0 12px 2px rgba(42, 92, 189, 0.4),
+    40px 0 20px -5px rgba(42, 92, 189, 0.4),
+    -40px 0 20px -5px rgba(42, 92, 189, 0.4),
+    0 -10px 10px -10px rgba(42, 92, 189, 0.4) inset;
+  transform: scale(1.1, 1.1);
+  background: rgba(0, 0, 0, 0.4);
+  font-size: 13px;
+  letter-spacing: 8px;
+  padding: 8px 18px;
+  text-shadow: 0 0 15px white;
+  border-bottom: 1px solid #2a5cbd;
+}
+
+/* Pour le header - taille adaptée */
+.header-area .main-nav .nav li:last-child a.submit-style {
+  height: 35px;
+  line-height: normal;
+  min-width: 140px;
+}
+
+/* Pour le formulaire - taille adaptée */
+form#contact button.submit-style {
+  width: 100%;
+  min-width: auto;
+}
+
+/* Styles pour la section testimonials */
+section.testimonials {
+  position: relative;
+  margin-top: 5px;
+    padding: 40px 0 40px 0 !important; /* Espacement réduit et égal */
+
+    background-color: transparent !important; /* Fond transparent */
+
+
+}
+
+section.testimonials:before {
+  position: absolute;
+  content: '';
+
+  left: 0px;
+  
+  width: 593px;
+  height: 152px;
+  z-index: 1;
+}
+
+section.testimonials:after {
+  position: absolute;
+  content: '';
+  
+  right: 0px;
+  bottom: -20px;
+  width: 632px;
+  height: 352px;
+  z-index: 1;
+}
+
+.testimonials .section-heading {
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.testimonials .section-heading h6 {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: var(--primary-blue);
+  margin-bottom: 15px;
+}
+
+.testimonials .section-heading h4 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #2a2a2a;
+  margin-bottom: 100px;
+  
+}
+
+.testimonials .section-heading h4 em {
+  font-style: normal;
+  color: var(--primary-blue);
+}
+
+.testimonials .item {
+  border-radius: 15px;
+  padding: 40px 30px;
+  
+  margin: 15px;
+  transition: all .3s;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0px 5px 35px 0px rgba(110, 108, 210, 0.15);
+  text-align: center;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.testimonials .item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 45px 0px rgba(148, 146, 245, 0.25);
+}
+
+.testimonials .item p {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 30px;
+  margin-bottom: 30px;
+  color: #4a4a4a;
+  flex-grow: 1;
+}
+
+.testimonials .item h4 {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: 900;
+  position: relative;
+  color: #2a2a2a;
+ 
+}
+
+.testimonials .item span {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--primary-blue);
+  display: block;
+  margin-bottom: 20px;
+}
+
+.testimonials .item img {
+  max-width: 44px;
+  z-index: 2;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  opacity: 0.7;
+}
+
+.testimonials .owl-dots {
+  text-align: center;
+  margin-top: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.testimonials .owl-dots .owl-dot {
+  width: 12px;
+  height: 12px;
+  background-color: #ddd;
+  border-radius: 50%;
+  margin: 0px 5px;
+  transition: all .3s;
+}
+
+.testimonials .owl-dots .owl-dot.active {
+  background-color: var(--primary-blue);
+  transform: scale(1.2);
+}
+
+/* Styles spécifiques pour le carousel testimonials */
+.owl-testimonials .item {
+  background: #fff; /* Garder le fond blanc pour les cartes individuelles */
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0px 5px 35px 0px rgba(148, 146, 245, 0.15);
+  transition: all 0.3s ease;
+  margin: 10px;
+}
+.owl-testimonials .item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 45px 0px rgba(148, 146, 245, 0.25);
+}
+
+.owl-testimonials .item p {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1.8;
+  color: #4a4a4a;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.owl-testimonials .item h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2a2a2a;
+  margin-bottom: 5px;
+}
+
+.owl-testimonials .item span {
+  font-size: 14px;
+  color: var(--primary-blue);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.owl-testimonials .item img {
+  max-width: 40px;
+  opacity: 0.8;
+  margin: 0 auto;
+  position: static;
+}
+
+/* Assurer que le carousel est visible */
+.owl-testimonials {
+  position: relative;
+  z-index: 2;
+}
+
+.owl-testimonials .owl-stage-outer {
+  position: relative;
+  z-index: 2;
+}
+
+.owl-testimonials .owl-item {
+  position: relative;
+  z-index: 2;
+}
+
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+/* Assurer que le contenu ne dépasse pas */
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Styles pour la section des logos clients - Cartes avec défilement fluide */
+#clients {
+  position: relative;
+   overflow: visible; /* Changé de hidden à visible */
+    padding: 40px 0 60px 0; /* Espacement réduit */
+
+  z-index: 2;
+
+}
+/* Assurer que le conteneur principal n'a pas d'overflow hidden */
+#clients .container {
+  position: relative;
+  overflow: visible;
+}
+
+#clients .owl-services {
+  display: flex;
+  animation: scrollLogos 25s linear infinite;
+  width: max-content;
+  gap: 5px; /* Espacement réduit entre les cartes */
+    z-index: 2; /* Assure que les cartes sont au-dessus de la flèche */
+
+}
+
+#clients .owl-services .item {
+  flex-shrink: 0;
+  width: 180px; /* Largeur réduite des cartes */
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: none !important;
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+  border: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
+  min-height: 145px; /* Hauteur réduite des cartes */
+  gap: 0;
+  margin-bottom: 80px
+  
+}
+
+#clients .owl-services .item:hover {
+  
+  box-shadow: 0 8px 25px rgba(26, 75, 140, 0.15);
+  border-color: var(--primary-blue);
+}
+
+#clients .owl-services .item .logo {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#clients .owl-services .item .logo img {
+  max-width: 130px;
+  max-height: 50px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  transition: all 0.3s ease;
+  
+}
+
+
+
+#clients .services-right-dec img {
+  filter: none !important; /* Supprime tous les filtres */
+  width: auto;
+  height: 150px;
+  opacity: 1 !important; /* Force la visibilité */
+  display: block !important; /* Assure l'affichage */
+  
+}
+
+/* Animation de défilement horizontal continu */
+@keyframes scrollLogos {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-180px * 5)); /* Calcul basé sur largeur carte + gap */
+  }
+}
+
+/* Cache les contrôles Owl Carousel */
+#clients .owl-dots,
+#clients .owl-nav {
+  display: none !important;
+}
+
+/* Style pour la section heading */
+#clients .section-heading {
+  margin-bottom: 100px;
+}
+
+/* Ajustement responsive */
+@media (max-width: 768px) {
+  #clients .owl-services .item {
+    width: 160px;
+    min-height: 200px;
+    padding: 12px;
+    
+  }
+  
+  #clients .owl-services .item .logo {
+    height: 80px;
+    
+  }
+  
+  #clients .owl-services .item .logo img {
+    max-width: 110px;
+    max-height: 80px;
+    
+  }
+}
+
+
+
+
+/* Correction pour l'alignement image + formulaire */
+.contact-us .row.align-items-center {
+  display: flex;
+  align-items: flex-start; /* Aligne en haut */
+  justify-content: center;
+  margin-top: 0px; /* CHANGÉ DE 40px À 0px */
+}
+
+.contact-us .col-lg-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 40px 0 10px 0 !important; /* RÉDUIT LE PADDING */
+  margin-top: 0 !important;
+}
+
+.contact-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-image img {
+  max-width: 100%;
+  height: 750px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 0 !important; /* Supprime les coins arrondis */
+  box-shadow: none !important; /* Supprime l'ombre */
+  background: transparent !important; /* Fond transparent */
+  border: none !important; /* Supprime toute bordure */
+  display: block;
+  margin: 0 auto;
+}
+
+/* Ajustement du formulaire pour l'alignement */
+.contact-us form#contact {
+   width: 100%;
+  max-width: 450px; /* AUGMENTÉ LA LARGEUR MAX */
+  margin: 0;
+  margin-top: 0px !important; /* AUGMENTÉ L'ESPACE */
+  padding: 30px; /* AUGMENTÉ LE PADDING */
+  margin-bottom: 0px !important;
+  min-height: 500px; /* AJOUTÉ HAUTEUR MINIMALE */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* SUPPRIME L'ESPACE EN BAS */
+}
+
+/* Assurer que les deux colonnes ont la même hauteur */
+@media (min-width: 992px) {
+  .contact-us .col-lg-6 {
+    min-height: 500px;
+  }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .contact-us .row.align-items-center {
+    flex-direction: column;
+  }
+  
+  .contact-us .col-lg-6 {
+    width: 100%;
+    margin-bottom: 0px; /* RÉDUIT L'ESPACE */
+    padding: 40px 0 10px 0 !important;
+    margin-top: 0 !important;
+  }
+}
+
+
+/* Section Vidéo avec Fond Noir */
+.video-hero {
+  position: relative;
+  height: 80vh;
+  min-height: 800px;
+  overflow: hidden;
+  margin: 0;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  filter: brightness(0.4) contrast(1.3);
+  
+}
+
+/* Overlay noir avec flou bleu */
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.black-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  z-index: 1;
+}
+
+.blue-blur-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(13, 45, 93, 0.9) 0%,
+    rgba(26, 75, 140, 0.7) 30%,
+    rgba(52, 116, 201, 0.4) 60%,
+    transparent 100%
+  );
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  z-index: 2;
+}
+
+/* Contenu hero */
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(0, 0, 0);
+  z-index: 3;
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+/* Phrases animées */
+.animated-phrases {
+  margin-bottom: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phrase-container {
+  position: relative;
+  height: 140px;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phrase {
+  font-size: 4.2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  line-height: 1.1;
+  background: linear-gradient(135deg, #ffffff 0%, #598cce 50%, #3474c9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 
+    0 0 30px rgba(52, 116, 201, 0.8),
+    0 0 60px rgba(26, 75, 140, 0.6);
+  width: 100%;
+  text-align: center;
+}
+
+.phrase-1 {
+  animation: phraseSlideCenter 9s infinite;
+}
+
+.phrase-2 {
+  animation: phraseSlideCenter 9s infinite 3s;
+}
+
+.phrase-3 {
+  animation: phraseSlideCenter 9s infinite 6s;
+}
+
+@keyframes phraseSlideCenter {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) translateY(-50px);
+    filter: blur(20px);
+  }
+  20% {
+    opacity: 1;
+    transform: translate(-50%, -50%) translateY(0);
+    filter: blur(0);
+  }
+  30% {
+    opacity: 1;
+    transform: translate(-50%, -50%) translateY(0);
+    filter: blur(0);
+  }
+  40% {
+    opacity: 0;
+    transform: translate(-50%, -50%) translateY(50px);
+    filter: blur(20px);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) translateY(50px);
+  }
+}
+
+/* Sous-titre */
+.hero-subtitle {
+   font-size: 1.3rem;
+  line-height: 1.6;
+  margin-bottom: 50px;
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: 300;
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Éléments qui défilent horizontalement */
+.scrolling-elements-container {
+  margin: 50px 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.scrolling-elements {
+    width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.scrolling-track {
+  display: flex;
+  gap: 5px;
+  animation: scrollHorizontal 25s linear infinite;
+  padding: 10px 0;
+   display: flex;
+  justify-content: center;
+}
+
+.element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px 25px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 15px;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(52, 116, 201, 0.3);
+  transition: all 0.3s ease;
+  min-width: 160px;
+  flex-shrink: 0;
+}
+
+.element:hover {
+  background: rgba(52, 116, 201, 0.2);
+  transform: translateY(-5px);
+  border-color: rgba(52, 116, 201, 0.6);
+  box-shadow: 0 10px 30px rgba(26, 75, 140, 0.4);
+}
+
+.element i {
+  font-size: 2.8rem;
+  margin-bottom: 12px;
+  background: linear-gradient(135deg, #b3d4ff, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.element span {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  white-space: nowrap;
+}
+
+@keyframes scrollHorizontal {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-160px * 5 - 25px * 5));
+  }
+}
+
+  /* Section des compteurs */
+  .counters-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    max-width: 800px;
+    width: 100%;
+  }
+
+.counter-item {
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.counter {
+  font-size: 3.5rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, #ffffff, #5a86c0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+
+.counter-item span {
+  font-size: 0.9rem;
+  color: rgba(5, 5, 5, 0.8);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Effets de particules bleues */
+.video-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 20% 30%, rgba(52, 116, 201, 0.2) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(26, 75, 140, 0.2) 0%, transparent 50%);
+  animation: particleFloat 20s ease-in-out infinite;
+  z-index: 1;
+}
+
+@keyframes particleFloat {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(-20px, 10px);
+  }
+  66% {
+    transform: translate(10px, -15px);
+  }
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .hero-content {
+    left: 8%;
+    width: 55%;
+  }
+  
+  .phrase {
+    font-size: 3.5rem;
+  }
+  
+  .counters-section {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .video-hero {
+    height: 80vh;
+    min-height: 600px;
+  }
+  
+  .hero-content {
+    left: 5%;
+    width: 65%;
+  }
+  
+  .phrase {
+    font-size: 3rem;
+  }
+  
+  .blue-blur-left {
+    width: 70%;
+  }
+  
+  .element {
+    min-width: 140px;
+    padding: 15px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-hero {
+    height: 70vh;
+    min-height: 500px;
+  }
+  
+  .hero-content {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+  
+  .phrase {
+    font-size: 2.5rem;
+  }
+
+  /* Ajustement pour le formulaire newsletter */
+.subscribe-newsletters form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+}
+
+.subscribe-newsletters input {
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 12px 15px;
+}
+
+.subscribe-newsletters .beautiful-button {
+  padding: 12px 20px;
+  min-width: 50px;
+}
+  
+  .phrase-container {
+    height: 100px;
+  }
+  
+  .blue-blur-left {
+    width: 100%;
+    background: linear-gradient(
+      180deg,
+      rgba(13, 45, 93, 0.9) 0%,
+      rgba(26, 75, 140, 0.7) 50%,
+      transparent 100%
+    );
+  }
+  
+  .scrolling-track {
+    animation-duration: 20s;
+  }
+  
+  .element {
+    min-width: 120px;
+    padding: 12px 15px;
+  }
+  
+  .counters-section {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .video-hero {
+    height: 60vh;
+    min-height: 400px;
+  }
+  
+  .phrase {
+    font-size: 2rem;
+  }
+  
+  .phrase-container {
+    height: 80px;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .element {
+    min-width: 110px;
+    padding: 10px 12px;
+  }
+  
+  .element i {
+    font-size: 2.2rem;
+  }
+  
+  .counter {
+    font-size: 2.8rem;
+  }
+}
+
+
+
+
+
+
+.beautiful-button.input-button {
+    border-radius: 0 !important;
+  padding: 12px 20px !important;
+  border: none !important;
+  min-width: auto !important;
+  position: relative;
+  z-index: 1;
+  margin-top: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, var(--dark-blue), var(--primary-blue)) !important;
+}
+.beautiful-button.input-button:hover {
+  background: linear-gradient(to bottom, var(--primary-blue), var(--light-blue)) !important;
+}
+
+
+
+.footer-horizontal .footer-item {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+
+
+
+/* Styles pour les boutons améliorés */
+.beautiful-button {
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(to bottom, var(--dark-blue), var(--primary-blue));
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  padding: 14px 28px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  animation: button-shimmer 2s infinite;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Hover animation */
+.beautiful-button:hover {
+  background: linear-gradient(to bottom, var(--primary-blue), var(--light-blue));
+  animation: button-particles 1s ease-in-out infinite;
+  transform: translateY(-2px);
+  color: white;
+  text-decoration: none;
+}
+
+/* Click animation */
+.beautiful-button:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Shimmer animation */
+@keyframes button-shimmer {
+  0% {
+    background-position: left top;
+  }
+  100% {
+    background-position: right bottom;
+  }
+}
+
+/* Particle animation */
+@keyframes button-particles {
+  0% {
+    background-position: left top;
+  }
+  100% {
+    background-position: right bottom;
+  }
+}
+
+
+
+</style>
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <img src="assets/images/digitali.jpg" alt="Digitali Logo">
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+
+            <!--ajouter un hover!!-->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="#top" class="active">Accueil</a></li>
+              <li class="scroll-to-section"><a href="#services">Services</a></li>
+              <li class="scroll-to-section"><a href="#succes">À propos</a></li>
+              <li class="scroll-to-section">
+                
+  <li class="scroll-to-section">
+  <a href="#contact" class="beautiful-button">Contactez-nous</a>
+</li>
+            </ul>        
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="main-banner" id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6 align-self-center">
+              <div class="owl-carousel owl-banner">
+                <div class="item header-text">
+                  <h6>Bienvenue chez Digitali</h6>
+                  <h2>Boostez <em>votre présence digitale</em> avec notre expertise en <span>marketing</span></h2>
+                  <p>Digitali est votre partenaire pour une stratégie digitale complète et efficace en Tunisie.</p>
+                  <div class="down-buttons">
+
+                    <div class="main-red-button-hover">
+                      <a href="#contact">Contactez-nous</a>
+                    </div>
+                    <div class="call-button">
+                      <a href="#"><i class="fa fa-phone"></i> +216 96 255 343</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="item header-text">
+                  <h6>Marketing Digital</h6>
+                  <h2>Des <em>solutions innovantes</em> pour <span>votre entreprise</span></h2>
+                  <p>Création de contenu, gestion des réseaux sociaux, développement web et stratégie digitale sur mesure.</p>
+                  <div class="down-buttons">
+                    <div class="main-red-button-hover">
+                      <a href="#services">Nos Services</a>
+                    </div>
+                    <div class="call-button">
+                      <a href="#"><i class="fa fa-phone"></i> +216 96 255 343</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="item header-text">
+                  <h6>Stratégie Digital</h6>
+                  <h2>Transformez <em>votre vision</em> en <span>réussite digitale</span></h2>
+                  <p>Notre équipe expérimentée vous accompagne dans tous vos projets digitaux.</p>
+                  <div class="down-buttons">
+                    <div class="main-red-button-hover">
+                      <a href="#about">En savoir plus</a>
+                    </div>
+                    <div class="call-button">
+                      <a href="#"><i class="fa fa-phone"></i> +216 96 255 343</a>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="services" class="our-services section">
+    <div class="services-right-dec">
+      <img src="assets/images/services-right-dec.png" alt="">
+    </div>
+    <div class="container">
+      <div class="services-left-dec">
+        <img src="assets/images/services-left-dec.png" alt="">
+      </div>
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading">
+            <h2>Nous <em>Proposons</em> Des Services De Qualité Avec <span>Nos Outils</span></h2>
+            <span>Nos Services</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="owl-carousel owl-services">
+            <div class="item">
+              <h4>Création de Contenu</h4>
+              <div class="icon"><img src="assets/images/service-icon-01.png" alt=""></div>
+              <p>Contenu engageant et optimisé pour vos réseaux sociaux</p>
+            </div>
+            
+            <div class="item">
+              <h4>Développement Web</h4>
+              <div class="icon"><img src="assets/images/service-icon-03.png" alt=""></div>
+              <p>Sites web modernes, responsives et optimisés SEO</p>
+            </div>
+            <div class="item">
+              <h4>Stratégie Social Media</h4>
+              <div class="icon"><img src="assets/images/service-icon-04.png" alt=""></div>
+              <p>Gestion complète de vos réseaux sociaux</p>
+            </div>
+            
+            <div class="item">
+              <h4>Analyse de Performance</h4>
+              <div class="icon"><img src="assets/images/service-icon-02.png" alt=""></div>
+              <p>Suivi et reporting détaillé de vos performances digitales</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- Section Vidéo Marketing avec Éléments Défilants -->
+ <div id="succes">
+<section id="video-hero" class="video-hero">
+  <div class="video-container">
+    <video autoplay muted loop playsinline class="background-video">
+      <source src="assets/videos/marketing-reel.mp4" type="video/mp4">
+      <source src="assets/videos/marketing-reel.webm" type="video/webm">
+      <img src="assets/images/marketing-team.jpg" alt="Équipe marketing digitale">
+    </video>
+    
+    <!-- Overlay noir avec flou bleu -->
+    <div class="gradient-overlay">
+      <div class="black-overlay"></div>
+      <div class="blue-blur-left"></div>
+    </div>
+    
+    <!-- Contenu texte -->
+    <div class="hero-content">
+      <div class="animated-phrases">
+        <div class="phrase-container">
+          <h2 class="phrase phrase-1">Votre réussite</h2>
+          <h2 class="phrase phrase-2">Notre mission</h2>
+          <h2 class="phrase phrase-3">Excellence Digital</h2>
+        </div>
+      </div>
+      
+      <p class="hero-subtitle">Notre équipe d'experts transforme votre vision en résultats concrets</p>
+      
+      <!-- Éléments qui défilent horizontalement -->
+      <div class="scrolling-elements-container">
+        <div class="scrolling-elements">
+          <div class="scrolling-track">
+            <!-- Première série -->
+            <div class="element">
+              <i class="fa fa-users"></i>
+              <span>Équipe Experts</span>
+            </div>
+            <div class="element">
+              <i class="fa fa-line-chart"></i>
+              <span>Résultats Mesurables</span>
+            </div>
+            <div class="element">
+              <i class="fa fa-rocket"></i>
+              <span>Stratégie Personnalisée</span>
+            </div>
+            <div class="element">
+              <i class="fa fa-bullseye"></i>
+              <span>Campagnes Ciblées</span>
+            </div>
+            
+            
+            <!-- Duplication pour effet infini -->
+            <div class="element">
+              <i class="fa fa-users"></i>
+              <span>Équipe Experts</span>
+            </div>
+            <div class="element">
+              <i class="fa fa-line-chart"></i>
+              <span>Résultats Mesurables</span>
+            </div>
+            <div class="element">
+              <i class="fa fa-rocket"></i>
+              <span>Stratégie Personnalisée</span>
+            </div>
+            <div class="element">
+              <i class="fa fa-bullseye"></i>
+              <span>Campagnes Ciblées</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Compteurs animés -->
+      <div class="counters-section">
+        <div class="counter-item">
+          <div class="counter" data-target="150">0</div>
+          <span>Projets Réalisés</span>
+        </div>
+        <div class="counter-item">
+          <div class="counter" data-target="98">0</div>
+          <span>Clients Satisfaits</span>
+        </div>
+        <div class="counter-item">
+          <div class="counter" data-target="24">0</div>
+          <span>Heures de Support</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section></div>
+
+
+
+
+<div id="clients" class="our-services section">
+  <div class="container">
+    <div class="services-left-dec">
+      <img src="assets/images/services-left-dec.png" alt="">
+    </div>
+    
+    <div class="row">
+      <div class="col-lg-6 offset-lg-3">
+        <div class="section-heading">
+          <h2>Ils Nous <em>Font</em> <span>Confiance</span></h2>
+          <span>Nos Clients</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="owl-carousel owl-services">
+          <!-- Vos cartes de logos existantes -->
+          <div class="item">
+            <div class="logo">
+              <img src="assets/images/sla.jpg" alt="Client SLA">
+            </div>
+          </div>
+          <div class="item">
+            <div class="logo">
+              <img src="assets/images/coif.jpg" alt="Client Coiffure">
+            </div>
+          </div>
+          <div class="item">
+            <div class="logo">
+              <img src="assets/images/horse.jpg" alt="Client Équitation">
+            </div>
+          </div>
+          <div class="item">
+            <div class="logo">
+              <img src="assets/images/dari.jpg" alt="Client Dari">
+            </div>
+          </div>
+          <div class="item">
+            <div class="logo">
+              <img src="assets/images/battt.jpg" alt="Client Batterie">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- LA FLÈCHE DOIT ÊTRE ICI, À LA FIN DU CONTENEUR -->
+    
+
+
+<!-- Section Testimonials -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-heading">
+          <h4>Ce Qu'Ils <em>Pensent</em> De Nous</h4>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="owl-testimonials owl-carousel">
+          <div class="item">
+            <p>"Digitali a transformé notre présence en ligne. Leur expertise en marketing digital a considérablement augmenté notre visibilité et nos conversions."</p>
+            <h4>Sarah Ben Ammar</h4>
+            <span>Directrice Marketing</span>
+            <i class="fa fa-quote-right" style="font-size: 40px; color: var(--primary-blue); opacity: 0.7;"></i>
+          </div>
+          <div class="item">
+            <p>"Un service exceptionnel ! L'équipe de Digitali est professionnelle et très réactive. Je les recommande vivement pour tout projet digital."</p>
+            <h4>Mohamed Trabelsi</h4>
+            <span>Entrepreneur</span>
+            <i class="fa fa-quote-right" style="font-size: 40px; color: var(--primary-blue); opacity: 0.7;"></i>
+          </div>
+          <div class="item">
+            <p>"La création de contenu et la stratégie social media proposées par Digitali ont boosté notre engagement de 200% en seulement 3 mois."</p>
+            <h4>Leila Chérif</h4>
+            <span>Gérante de Boutique</span>
+            <i class="fa fa-quote-right" style="font-size: 40px; color: var(--primary-blue); opacity: 0.7;"></i>
+          </div>
+          <div class="item">
+            <p>"Site web moderne et parfaitement optimisé. Digitali a su comprendre nos besoins et les traduire en solutions efficaces et innovantes."</p>
+            <h4>Karim Jlassi</h4>
+            <span>CEO Tech Startup</span>
+            <i class="fa fa-quote-right" style="font-size: 40px; color: var(--primary-blue); opacity: 0.7;"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<div id="contact" class="contact-us section">
+    <div class="container">
+      <!-- Décorations -->
+      <div class="contact-left-dec img">
+        <img src="assets/images/services-left-dec.png" alt="">
+      </div>
+      
+      <!-- Titre centré -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h2>N'hésitez pas à nous <em>Contacter</em> via le <span>formulaire</span></h2>
+            <span>Contactez-nous</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Contenu image + formulaire alignés -->
+      <div class="row align-items-center">
+        <!-- Image -->
+        <div class="col-lg-6">
+          <div class="contact-image text-center">
+            <img src="assets/images/ahy.png" alt="Contact Digitali">
+          </div>
+        </div>
+        
+        <!-- Formulaire -->
+        <div class="col-lg-6">
+          <form id="contact" action="" method="post">
+            <div class="row">
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="text" name="name" id="name" placeholder="Nom" autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="text" name="surname" id="surname" placeholder="Prénom" autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Votre Email" required>
+                </fieldset>
+              </div>
+              
+              
+              <div class="col-lg-12">
+                <fieldset>
+                  <button type="submit" id="form-submit" class="beautiful-button">Envoyer</button>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <div id="contact-message" style="display: none; margin-top: 20px; padding: 10px; border-radius: 5px; text-align: center;"></div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<footer>
+  
+  <div class="container">
+      
+    <div class="row footer-horizontal">
+      
+      <div class="col-lg-3 col-md-6">
+      
+  <div class="about footer-item">
+    <div class="logo">
+      <a href="#"><img src="assets/images/digitali.jpg" alt="Digitali" style="height: 100px; width: auto; "></a>
+    </div>
+    <a href="mailto:digitalicommunication4@gmail.com">digitalicommunication4@gmail.com</a>
+    <ul>
+      <li><a href="https://www.facebook.com/people/Digitali/61581612352703/" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="https://www.instagram.com/digitalicom?igsh=Y2hzZDdzd2d2ZTNl" target="_blank" rel="noopener"><i class="fa fa-instagram"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/digitali-communication-babb26389"><i class="fa fa-linkedin"></i></a></li>
+      <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+    </ul>
+  </div>
+</div>
+      <div class="col-lg-3 col-md-6">
+        <div class="services footer-item">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Création de Contenu</a></li>
+            <li><a href="#">Production Vidéo</a></li>
+            <li><a href="#">Gestion des Réseaux Sociaux</a></li>
+            <li><a href="#">Développement Web</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="community footer-item">
+          <h4>Ressources</h4>
+          <ul>
+            <li><a href="#">Marketing Digital</a></li>
+            <li><a href="#">Stratégie de Contenu</a></li>
+            <li><a href="#">Audit de Site Web</a></li>
+            <li><a href="#">Analyse SEO</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+  <div class="subscribe-newsletters footer-item">
+  </div>
+</div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="copyright">
+          <p>Copyright © 2025 Digitali. Tous droits réservés.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+ <!-- Scripts -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/owl-carousel.js"></script>
+<script src="assets/js/animation.js"></script>
+<script src="assets/js/imagesloaded.js"></script>
+<script src="assets/js/custom.js"></script>
+
+<script>
+// Initialisation quand le document est prêt
+$(document).ready(function() {
+    
+    // ===== FORMULAIRES - SOLUTION SIMPLE =====
+    
+    // Formulaire de contact principal
+    $('#contact form').on('submit', function(e) {
+        e.preventDefault();
+        
+        const name = $('#name').val();
+        const surname = $('#surname').val();
+        const email = $('#email').val();
+        
+        if (!name || !surname || !email) {
+            showMessage('❌ Veuillez remplir tous les champs obligatoires.', 'error');
+            return;
+        }
+        
+        // Afficher loading
+        showMessage('⏳ Envoi en cours...', 'info');
+        
+        // SOLUTION SIMPLE : Envoi direct par email
+        const subject = `Nouveau Contact Digitali - ${name} ${surname}`;
+        const body = `
+Nouveau contact depuis le site Digitali:
+
+🔸 Nom: ${name}
+🔸 Prénom: ${surname}  
+🔸 Email: ${email}
+🔸 Date: ${new Date().toLocaleString()}
+
+---
+Site Digitali
+        `.trim();
+        
+        // Envoyer l'email directement
+        sendSimpleEmail(subject, body, email);
+    });
+    
+    // Formulaire newsletter
+    $('.newsletter-form').on('submit', function(e) {
+        e.preventDefault();
+        
+        const email = $('#newsletter-email').val();
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        
+        if (!email) {
+            showNewsletterMessage('Veuillez entrer votre email', 'error');
+            return;
+        }
+        
+        if (!emailRegex.test(email)) {
+            showNewsletterMessage('Veuillez entrer un email valide', 'error');
+            return;
+        }
+        
+        const subject = 'Nouvelle inscription newsletter';
+        const body = `
+Nouvelle inscription newsletter:
+
+📧 Email: ${email}
+📅 Date: ${new Date().toLocaleString()}
+
+---
+Message automatique - Site Digitali
+        `.trim();
+        
+        sendSimpleEmail(subject, body, email);
+    });
+
+    // ===== FONCTION D'ENVOI EMAIL SIMPLE =====
+    function sendSimpleEmail(subject, body, userEmail) {
+        // Utiliser le service EmailJS gratuit
+        const serviceID = 'service_8n2a8cb'; // Service EmailJS par défaut
+        const templateID = 'template_8ska1dp'; // Template par défaut
+        
+        // Charger EmailJS dynamiquement
+        if (typeof emailjs === 'undefined') {
+            loadEmailJS().then(() => {
+                sendWithEmailJS(serviceID, templateID, subject, body, userEmail);
+            });
+        } else {
+            sendWithEmailJS(serviceID, templateID, subject, body, userEmail);
+        }
+    }
+    
+    function loadEmailJS() {
+        return new Promise((resolve) => {
+            const script = document.createElement('script');
+            script.src = 'https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js';
+            script.onload = () => {
+                emailjs.init('qF0eY8p7KXlP6W2nV'); // Clé publique EmailJS
+                resolve();
+            };
+            document.head.appendChild(script);
+        });
+    }
+    
+    function sendWithEmailJS(serviceID, templateID, subject, body, userEmail) {
+        const templateParams = {
+            to_email: 'digitalicommunication4@gmail.com',
+            from_name: userEmail || 'Digitali',
+            subject: subject,
+            message: body,
+            reply_to: userEmail
+        };
+        
+        emailjs.send(serviceID, templateID, templateParams)
+            .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+                if (templateParams.subject.includes('newsletter')) {
+                    showNewsletterMessage('✅ Merci pour votre inscription !', 'success');
+                    $('#newsletter-email').val('');
+                } else {
+                    showMessage('✅ Message envoyé avec succès ! Nous vous recontacterons rapidement.', 'success');
+                    $('#contact form')[0].reset();
+                }
+            })
+            .catch(function(error) {
+                console.error('FAILED...', error);
+                // Fallback vers une autre méthode
+                useFallbackMethod(subject, body, userEmail);
+            });
+    }
+    
+    function useFallbackMethod(subject, body, userEmail) {
+        // Méthode de secours avec Web3Forms
+        const formData = new FormData();
+        formData.append('access_key', '7d4a8b2c-9e1f-4a3b-8c5d-6e7f8a9b0c1d'); // Clé Web3Forms
+        formData.append('subject', subject);
+        formData.append('message', body);
+        formData.append('from_name', userEmail || 'Site Digitali');
+        formData.append('reply_to', userEmail);
+        
+        fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                if (subject.includes('newsletter')) {
+                    showNewsletterMessage('✅ Merci pour votre inscription !', 'success');
+                    $('#newsletter-email').val('');
+                } else {
+                    showMessage('✅ Message envoyé avec succès ! Nous vous recontacterons rapidement.', 'success');
+                    $('#contact form')[0].reset();
+                }
+            } else {
+                throw new Error('Web3Forms error');
+            }
+        })
+        .catch(error => {
+            console.error('Fallback failed:', error);
+            // Dernière méthode : redirection email classique
+            useEmailRedirect(subject, body, userEmail);
+        });
+    }
+    
+    function useEmailRedirect(subject, body, userEmail) {
+        const mailtoLink = `mailto:digitalicommunication4@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}${userEmail ? `&reply-to=${encodeURIComponent(userEmail)}` : ''}`;
+        
+        if (subject.includes('newsletter')) {
+            showNewsletterMessage('✅ Merci pour votre inscription !', 'success');
+            $('#newsletter-email').val('');
+        } else {
+            showMessage('✅ Redirection vers votre email...', 'success');
+            $('#contact form')[0].reset();
+        }
+        
+        // Ouvrir le client email en arrière-plan
+        setTimeout(() => {
+            window.open(mailtoLink, '_blank');
+        }, 1000);
+    }
+
+    // ===== CAROUSELS =====
+    
+    // Initialisation du carousel testimonials
+    $('.owl-testimonials').owlCarousel({
+        loop: true,
+        nav: false,
+        dots: true,
+        responsive: {
+            0: { items: 1 },
+            768: { items: 2 },
+            992: { items: 3 }
+        }
+    });
+
+    // Duplique les logos pour créer un effet de défilement infini fluide
+    const clientsContainer = document.querySelector('#clients .owl-services');
+    if (clientsContainer) {
+        const items = clientsContainer.innerHTML;
+        clientsContainer.innerHTML = items + items;
+    }
+    
+    // Désactive Owl Carousel pour la section clients
+    $('#clients .owl-services').owlCarousel('destroy');
+
+    // ===== ANIMATIONS =====
+    
+    // Animation des compteurs
+    function animateCounters() {
+        $('.counter').each(function() {
+            const $this = $(this);
+            const target = parseInt($this.data('target'));
+            const duration = 2000;
+            const step = target / (duration / 16);
+            let current = 0;
+            
+            const timer = setInterval(() => {
+                current += step;
+                if (current >= target) {
+                    $this.text(target + '+');
+                    clearInterval(timer);
+                } else {
+                    $this.text(Math.floor(current));
+                }
+            }, 16);
+        });
+    }
+
+    function checkCounterVisibility() {
+        const countersSection = document.querySelector('.counters-section');
+        if (countersSection) {
+            const rect = countersSection.getBoundingClientRect();
+            const isVisible = (
+                rect.top >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+            );
+            
+            if (isVisible) {
+                animateCounters();
+                window.removeEventListener('scroll', checkCounterVisibility);
+            }
+        }
+    }
+
+    // Animation des phrases
+    function rotatePhrases() {
+        const phrases = $('.phrase');
+        let currentIndex = 0;
+        
+        function showNextPhrase() {
+            phrases.removeClass('active');
+            $(phrases[currentIndex]).addClass('active');
+            currentIndex = (currentIndex + 1) % phrases.length;
+        }
+        
+        showNextPhrase();
+        setInterval(showNextPhrase, 3000);
+    }
+
+    // ===== CORRECTIONS D'AFFICHAGE =====
+    
+    // Correction du positionnement de la flèche
+    setTimeout(function() {
+        const clientsSection = document.getElementById('clients');
+        if (clientsSection) {
+            const arrow = clientsSection.querySelector('.services-right-dec');
+            const container = clientsSection.querySelector('.container');
+            
+            if (arrow && container) {
+                container.appendChild(arrow);
+                arrow.style.display = 'block';
+                arrow.style.visibility = 'visible';
+                arrow.style.opacity = '1';
+            }
+        }
+    }, 500);
+
+    // ===== ÉVÉNEMENTS =====
+    
+    $(document).on("click", ".naccs .menu div", function() {
+        var numberIndex = $(this).index();
+        if (!$(this).is("active")) {
+            $(".naccs .menu div").removeClass("active");
+            $(".naccs ul li").removeClass("active");
+            $(this).addClass("active");
+            $(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
+            var listItemHeight = $(".naccs ul").find("li:eq(" + numberIndex + ")").innerHeight();
+            $(".naccs ul").height(listItemHeight + "px");
+        }
+    });
+
+    // ===== LANCEMENT DES FONCTIONNALITÉS =====
+    
+    window.addEventListener('load', checkCounterVisibility);
+    window.addEventListener('scroll', checkCounterVisibility);
+    rotatePhrases();
+});
+
+// ===== FONCTIONS UTILITAIRES =====
+
+function showMessage(message, type) {
+    const messageDiv = $('#contact-message');
+    messageDiv.html(message)
+        .css({
+            'display': 'block',
+            'background': type === 'success' ? 'rgba(76, 175, 80, 0.2)' : 
+                         type === 'error' ? 'rgba(244, 67, 54, 0.2)' : 'rgba(33, 150, 243, 0.2)',
+            'color': type === 'success' ? '#4CAF50' : 
+                    type === 'error' ? '#f44336' : '#2196F3',
+            'border': type === 'success' ? '1px solid #4CAF50' : 
+                     type === 'error' ? '1px solid #f44336' : '1px solid #2196F3'
+        })
+        .fadeIn();
+    
+    setTimeout(() => {
+        messageDiv.fadeOut();
+    }, 5000);
+}
+
+function showNewsletterMessage(message, type) {
+    $('.newsletter-message').remove();
+    
+    const messageDiv = $('<div class="newsletter-message"></div>')
+        .text(message)
+        .css({
+            'margin-top': '10px',
+            'padding': '10px',
+            'border-radius': '5px',
+            'text-align': 'center',
+            'font-size': '14px',
+            'background': type === 'success' ? 'rgba(76, 175, 80, 0.2)' : 'rgba(244, 67, 54, 0.2)',
+            'color': type === 'success' ? '#4CAF50' : '#f44336',
+            'border': type === 'success' ? '1px solid #4CAF50' : '1px solid #f44336'
+        });
+    
+    $('.newsletter-form').append(messageDiv);
+    
+    setTimeout(() => {
+        messageDiv.fadeOut(() => messageDiv.remove());
+    }, 5000);
+}
+
+// ===== CORRECTIONS SUPPLEMENTAIRES =====
+
+window.addEventListener('DOMContentLoaded', function() {
+    setTimeout(function() {
+        $('.services-right-dec').css({
+            'display': 'block',
+            'visibility': 'visible',
+            'opacity': '1'
+        });
+    }, 1000);
+});
+</script>
+</body>
+</html>
