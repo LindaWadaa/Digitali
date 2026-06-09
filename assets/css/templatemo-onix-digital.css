@@ -178,7 +178,7 @@ body {
 }
 
 .page-section {
-  margin-bottom: 30px !important; /* R├®duit l'espace sous les titres */
+  margin-bottom: 30px !important; /* Réduit l'espace sous les titres */
 }
 
 .section-heading h2 {
@@ -1023,8 +1023,8 @@ Services Style
 .our-services {
   position: relative;
   margin-top: 0px;
-  padding-top: 80px; /* R├®duit de 120px ├á 80px */
-  padding-bottom: 60px; /* Ajoute un padding bas coh├®rent */
+  padding-top: 80px; /* Réduit de 120px à 80px */
+  padding-bottom: 60px; /* Ajoute un padding bas cohérent */
 }
 
 .our-services .section-heading {
@@ -1094,7 +1094,7 @@ About
 
 .about-us {
   margin-top: 0px;
-  padding-top: 80px; /* R├®duit de 120px ├á 80px */
+  padding-top: 80px; /* Réduit de 120px à 80px */
   padding-bottom: 60px;
 }
 
@@ -1170,14 +1170,14 @@ contact
 .contact-us {
   z-index: 2;
   position: relative;
-  padding: 80px 0 40px 0 !important; /* Espacement r├®duit et coh├®rent */
+  padding: 80px 0 40px 0 !important; /* Espacement réduit et cohérent */
   margin-top: 0;
 }
 contact-us .container {
   position: relative;
 }
 .contact-us .col-lg-6 {
-  padding: 40px 0 20px 0 !important; /* R├®duit le padding interne */
+  padding: 40px 0 20px 0 !important; /* Réduit le padding interne */
   margin-top: 0 !important;
 }
 .contact-us .row.align-items-center {
@@ -1336,25 +1336,25 @@ footer {
 
 
 }
-/* R├®organisation du footer en horizontal compact */
+/* Réorganisation du footer en horizontal compact */
 .footer-horizontal {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   gap: 15px;
-  padding: 30px 0 10px 0; /* R├®duit le padding */
+  padding: 30px 0 10px 0; /* Réduit le padding */
 }
 footer .footer-item h4 {
   font-size: 16px;
   font-weight: 700;
   color: #2a2a2a;
-  margin-bottom: 15px; /* R├®duit la marge */
+  margin-bottom: 15px; /* Réduit la marge */
 }
 
 footer .about .logo img {
   width: 80px;
-  margin-bottom: 15px; /* R├®duit la marge */
+  margin-bottom: 15px; /* Réduit la marge */
 }
 
 footer .about a {
@@ -1443,8 +1443,8 @@ footer .footer-item form button {
   outline: none;
 }
 footer .copyright {
-  margin-top: 20px !important; /* R├®duit l'espace au-dessus du copyright */
-  padding: 15px 0; /* R├®duit le padding */
+  margin-top: 20px !important; /* Réduit l'espace au-dessus du copyright */
+  padding: 15px 0; /* Réduit le padding */
   margin-bottom: 0;
   text-align: center
   ;
@@ -1455,7 +1455,7 @@ footer .copyright p {
   margin-top: 0;
   border-top: 1px solid #eee;
   color: #afafaf;
-  padding: 15px 0; /* R├®duit le padding */
+  padding: 15px 0; /* Réduit le padding */
   font-weight: 200;
 }
 
